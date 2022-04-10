@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>UBA, FADU, DGPC - Cátedra Díaz Cortez - Diseño Gráfico y Diseño de Imagen y Sonido - Gisele Ruiz, Daniel Perez - ACUMAR - Bibliotecas Móviles - 2º cuat. 2021</title>
+</head>
+
+<body>
+    <header class="contenedor contenedor-heder">
+        <div class="barra barra-sup">
+            <a href="inicio.html">
+                <img src="img/logo.png" alt="logo auidioteca">
+            </a>
+            <div id="navegacion-sup">
+                <!--Elemento de formulario-->
+                <input type="checkbox" id="btn-menu">
+                <!--Label: sirve para "asociar" elementos por medio del atributo for-->
+                <label for="btn-menu"> 
+                
+                    <div>
+                        <div class="on llamada_campana" onclick="this.className='off';return true;"></div>
+                        <i class="icon i-camp campana fas fa-bell">Notificaciones</i>
+                        <!--<img class="campana" src="campana.svg">-->
+                    </div>
+                </label>
+                <nav class="menu">
+                    <ul>
+                        <li>Se publico tu pedido</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li>
+                            <!--<a class="icon" href="#">
+                                <i class="fas fa-bell">Notificaciones</i>
+                            </a>-->
+                            <!--<ul class="emergente">
+                                <li><a href="#">Se publico tu pedido</a></li>
+                            </ul>-->
+                        </li>
+                        <li id="menu">
+                            <a class="icon" href="#">
+                                <i class="fas fa-cog">Ajustes</i>
+                            </a>
+                            <ul class="confi">
+                                <li>
+                                    <a href="#" title="mi cuenta">
+                                        <i class="fas fa-user-alt"></i>
+                                        <h3>Mi cuenta</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="configuracion">
+                                        <i class="fas fa-cog"></i>
+                                        <h3>Configuración</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="ayuda">
+                                        <i class="fas fa-map-marker"></i>
+                                        <h3>Ayuda</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="cerar sesion">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                        <h3>Cerrar sesión</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="barr barra-inf">
+            <nav id="navegacion-inf">
+                <a class="icon explorar" href=buscador.html>
+                    <i class="fas fa-search">Buscar</i>
+                </a>
+                <a class="icon casa" href=index.html>
+                    <i class="fas fa-home">Inicio</i>
+                </a>
+                <a class="icon perfil" href=usuario.html>
+                    <i class="fas fa-user">Perfil</i>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main class="contenedor">
+        <section class="contenedor titulos">
+            <img src="img/libro.jpg" alt="Portada Mujercita">
+            <div class="descripcion-libro">
+                <div class="tituli-autor">
+                    <h2>Mujercitas</h2>
+                    <p>Laisa May Alcott</p>
+                    <p>Duración:<span> 2:53:16hs</span></p>
+                    <img src="img/calificacion.png" alt="Clasificacion con estrellas">
+                </div>
+                <div class="acciones-libro">
+                    <a class="agregar-favorito" href="#">
+                        <i class="icon-ch far fa-star"></i>
+                        <p>Favorito</p>
+                    </a>
+                    <a class="agregar-favorito" href="#">
+                        <i class="icon-ch fas fa-hand-holding-heart"></i>
+                        <p>Agradecer</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor sinopsis">
+            <h2>SINOPSIS</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corrupti explicabo perferendis praesentium odio illo nihil itaque, recusandae dicta laborum ipsa consectetur minima dolore sint repellendus accusantium aperiam dolorum vitae.</P>
+        </section>
+        <section class="btn-titulos">
+            <ul>
+                <li class="boton boton-crema"><a href="reproductor.html">REPRODUCIR</a></li>
+                <!--<li class="boton">
+                    <a href="#">CAPITULOS</a>
+                    <i class="fas fa-chevron-down"></i>
+                </li>-->
+            </ul>
+            <ul>
+                <li class="boton">
+                    <a class="tt-opciones" href="#">
+                        <h3>CAPITULOS</h3>
+                        <i class="fas fa-chevron-down"></i>
+                        <ul class="sub-menu-tt">
+                            <li><a href="#">Capitulo 1</a></li>
+                            <li><a href="#">Capitulo 2</a></li>
+                            <li><a href="#">Capitulo 3</a></li>
+                            <li><a href="#">Capitulo 4</a></li>
+                            <li><a href="#">Capitulo 5</a></li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <p>Los contenidos publicados en estas páginas han sido tomados por alumnos de una materia de la Universidad de Buenos Aires para la realización de un trabajo práctico. Los textos, logotipos, fotografías, tipografías, etc., pueden no ser de su autoría
+            y sólo son utilizados a los fines prácticos del ejercicio.</p>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Sidebar Accordion JS -->
+    <script src="js/sidebar-accordion.js"></script>
+    <script src="js/dropdown-menu.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

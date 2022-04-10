@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/jquery.gScrollingCarousel.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <title> G Scrolling Carousel</title>
+    <style>
+        body {
+            padding: 5px 13px;
+            user-select: none;
+        }
+        
+        .g-scrolling-carousel .items {
+            padding: 5px 0;
+        }
+        
+        .g-scrolling-carousel .items {
+            display: inline-block;
+            /* notice the comments between inline-block items */
+            margin-right: 10px;
+            width: 100%;
+            height: 150px;
+            line-height: 150px;
+            box-shadow: 0 0 5px #000;
+            text-align: center;
+        }
+        
+        @media only screen and (min-width: 720px) {
+            main {
+                background: #f9f9f9;
+                width: 650px;
+                padding: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                box-shadow: 2px 1px 6px #777;
+                padding-bottom: 50px;
+            }
+        }
+        
+        figure {
+            position: relative;
+        }
+        
+        figcaption {
+            position: absolute;
+            top: 5em;
+            left: 1.5em;
+            font-size: .6em;
+            font-family: 'mitr', sans-serif;
+            font-weight: 300;
+        }
+        
+        span {
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h1> G Scrolling Carousel Example</h1>
+        <div class="g-scrolling-carousel">
+            <div class="items">
+                <div class="lib-lista">
+                    <article>
+                        <figure>
+                            <a class="btn-libro" href=mujercita.html>
+                                <img src="img/icono-libro-1.jpg" alt="Mujercitas">
+                            </a>
+                            <figcaption>Duración <span> 230min</span></figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <a class="btn-libro" href="#"><img src="img/icono-libro-2.jpg" alt="Hamblet"></a>
+                            <figcaption>Duración <span> 260min</span></figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <a class="btn-libro" href="#"><img src="img/icono-libro-3.jpg" alt="Cumbres Borrascosas"></a>
+                            <figcaption>Duración <span> 180min</span></figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <a class="btn-libro" href="#"><img src="img/icono-libro-3.jpg" alt="Cumbres Borrascosas"></a>
+                            <figcaption>Duración <span> 130min</span></figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <a class="btn-libro" href="#"><img src="img/icono-libro-3.jpg" alt="Cumbres Borrascosas"></a>
+                            <figcaption>Duración <span> 230min</span></figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <a class="btn-libro" href="#"><img src="img/icono-libro-3.jpg" alt="Cumbres Borrascosas"></a>
+                            <figcaption>Duración <span> 80min</span></figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/jquery.gScrollingCarousel.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".g-scrolling-carousel .items").gScrollingCarousel();
+        });
+    </script>
+</body>
+
+</html>

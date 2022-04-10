@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="css/jquery.gScrollingCarousel.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/home.css">
+    <title>UBA, FADU, DGPC - Cátedra Díaz Cortez - Diseño Gráfico y Diseño de Imagen y Sonido - Gisele Ruiz, Daniel Perez - ACUMAR - Bibliotecas Móviles - 2º cuat. 2021</title>
+</head>
+
+<body>
+    <header class="contenedor contenedor-heder">
+        <div class="barra barra-sup">
+            <a href="inicio.html">
+                <img src="img/logo.png" alt="logo auidioteca">
+            </a>
+            <div id="navegacion-sup">
+                <!--Elemento de formulario-->
+                <input type="checkbox" id="btn-menu">
+                <!--Label: sirve para "asociar" elementos por medio del atributo for-->
+                <label for="btn-menu"> 
+                
+                    <div>
+                        <div class="on llamada_campana" onclick="this.className='off';return true;"></div>
+                        <i class="icon i-camp campana fas fa-bell">Notificaciones</i>
+                        <!--<img class="campana" src="campana.svg">-->
+                    </div>
+                </label>
+                <nav class="menu">
+                    <ul>
+                        <li>Requistrate <a href="registro.html">cli aqui</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li>
+                            <!--<a class="icon" href="#">
+                                <i class="fas fa-bell">Notificaciones</i>
+                            </a>-->
+                            <!--<ul class="emergente">
+                                <li><a href="#">Se publico tu pedido</a></li>
+                            </ul>-->
+                        </li>
+                        <li id="menu">
+                            <a class="icon" href="#">
+                                <i class="fas fa-cog">Ajustes</i>
+                            </a>
+                            <ul class="confi">
+                                <li>
+                                    <a href="#" title="mi cuenta">
+                                        <i class="fas fa-user-alt"></i>
+                                        <h3>Mi cuenta</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="configuracion">
+                                        <i class="fas fa-cog"></i>
+                                        <h3>Configuración</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="ayuda">
+                                        <i class="fas fa-map-marker"></i>
+                                        <h3>Ayuda</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="cerar sesion">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                        <h3>Cerrar sesión</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="barr barra-inf">
+            <nav id="navegacion-inf">
+                <a class="icon explorar" href=buscador.html>
+                    <i class="fas fa-search">Buscar</i>
+                </a>
+                <a class="icon casa" href=index-colbr.html>
+                    <i class="fas fa-home">Inicio</i>
+                </a>
+                <a class="icon perfil" href=sere.html>
+                    <i class="fas fa-user">Perfil</i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor contenido-princiapal">
+        <section class="contenedor escuchando">
+            <h2>Todos los fuegos el fuego</h2>
+            <h4>Julio Cortázar</h4>
+            <img src="img/porcentaje-lectura.png" alt="lectura">
+            <div class="reproducir">
+                <h3>CONTINUAR ESCUCHANDO</h3>
+                <i class="icon-ch fas fa-play"></i>
+            </div>
+        </section>
+
+        <div class="contenido-listas">
+            <section>
+                <div class="contenedor-lista lista">
+                    <h2>Prueba uno</h2>
+                    <a href="#">Ver mas</a>
+                </div>
+                <div class="g-scrolling-carousel">
+                    <div class="items">
+                        <a href=mujercita.html><img src="img/icono-Todos-los-fuegos-el-fuego.jpg" alt="Todos los fuegos el fuego">
+
+                        </a>
+                        <a href=mujercita.html></a> <img src="img/La-niña-del-agua.jpg" alt="La niña del agua y otros mitos y leyendas de América">
+
+                        </a>
+                        <a href=mujercita.html><img src="img/el-danubio.jpg" alt="El Danubio">
+
+                        </a>
+                        <a href=mujercita.html></a> <img src="img/barrio gris.jpg" alt="Cumbres Borrascosas">
+
+                        </a>
+                        <a href=mujercita.html><img src="img/el campito.jpg" alt="Cumbres Borrascosas">
+
+                        </a>
+                        <a href=mujercita.html></a> <img src="img/florentina.jpg" alt="Florentina">
+
+                        </a>
+                        <a href=mujercita.html><img src="img/el peletero.jpg" alt="El peletero">
+
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="recomendados">
+                <div class="contenedor-lista">
+                    <h2>Recomendados</h2>
+                </div>
+                <article class="btn-recomendados">
+                    <a href="#">
+                        <img src="img/politica.jpg" alt="politica, derechos y justicia ambiental">
+                        <div class="txt-recomendados">
+                            <h3>Política, derechos y justicia ambiental</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sapiente iure obcaecati porro odit recusandae beatae dolores? At saepe quaerat.</p>
+                            <a class="boton boton-crema btn-escuchar" href="mujercita.html">Grabar</a>
+                        </div>
+
+                    </a>
+                </article>
+                <article class="btn-recomendados">
+                    <a href="#">
+                        <img src="img/riachuelo.jpg" alt="riachuelo">
+                        <div class="txt-recomendados">
+                            <h3>Riachuelo. Zona de promesas</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sapiente iure obcaecati porro odit recusandae beatae dolores? At saepe quaerat.</p>
+                            <a class="boton boton-crema btn-escuchar" href="mujercita.html">Grabar</a>
+                        </div>
+
+                    </a>
+                </article>
+                <article class="btn-recomendados">
+                    <a href="#">
+                        <img src="img/el color del rio.jpg" alt="el color del rio">
+                        <div class="txt-recomendados">
+                            <h3>El color del rio</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sapiente iure obcaecati porro odit recusandae beatae dolores? At saepe quaerat.</p>
+                            <a class="boton boton-crema btn-escuchar" href="mujercita.html">Grabar</a>
+                        </div>
+
+                    </a>
+                </article>
+                <article class="btn-recomendados">
+                    <a href="#">
+                        <img src="img/1984.jpg" alt="mil nueve ocheta y cuatro">
+                        <div class="txt-recomendados">
+                            <h3>1984</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sapiente iure obcaecati porro odit recusandae beatae dolores? At saepe quaerat.</p>
+                            <a class="boton boton-crema btn-escuchar" href="mujercita.html">Grabar</a>
+                        </div>
+
+                    </a>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Los contenidos publicados en estas páginas han sido tomados por alumnos de una materia de la Universidad de Buenos Aires para la realización de un trabajo práctico. Los textos, logotipos, fotografías, tipografías, etc., pueden no ser de su autoría
+            y sólo son utilizados a los fines prácticos del ejercicio.</p>
+    </footer>
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/dropdown-menu.js"></script>
+    <script src="js/menu-confi.js"></script>
+    <script src="js/jquery.gScrollingCarousel.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".g-scrolling-carousel .items").gScrollingCarousel();
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>

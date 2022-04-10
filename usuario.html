@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/user.css">
+    <title>UBA, FADU, DGPC - Cátedra Díaz Cortez - Diseño Gráfico y Diseño de Imagen y Sonido - Gisele Ruiz, Daniel Perez - ACUMAR - Bibliotecas Móviles - 2º cuat. 2021</title>
+</head>
+
+<body>
+    <header class="contenedor contenedor-heder">
+        <div class="barra barra-sup">
+            <a href="inicio.html">
+                <img src="img/logo.png" alt="logo auidioteca">
+            </a>
+            <div id="navegacion-sup">
+                <!--Elemento de formulario-->
+                <input type="checkbox" id="btn-menu">
+                <!--Label: sirve para "asociar" elementos por medio del atributo for-->
+                <label for="btn-menu"> 
+                
+                    <div>
+                        <div class="on llamada_campana" onclick="this.className='off';return true;"></div>
+                        <i class="icon i-camp campana fas fa-bell">Notificaciones</i>
+                        <!--<img class="campana" src="campana.svg">-->
+                    </div>
+                </label>
+                <nav class="menu">
+                    <ul>
+                        <li>Se publico tu pedido</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li>
+                            <!--<a class="icon" href="#">
+                                <i class="fas fa-bell">Notificaciones</i>
+                            </a>-->
+                            <!--<ul class="emergente">
+                                <li><a href="#">Se publico tu pedido</a></li>
+                            </ul>-->
+                        </li>
+                        <li id="menu">
+                            <a class="icon" href="#">
+                                <i class="fas fa-cog">Ajustes</i>
+                            </a>
+                            <ul class="confi">
+                                <li>
+                                    <a href="#" title="mi cuenta">
+                                        <i class="fas fa-user-alt"></i>
+                                        <h3>Mi cuenta</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="configuracion">
+                                        <i class="fas fa-cog"></i>
+                                        <h3>Configuración</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="ayuda">
+                                        <i class="fas fa-map-marker"></i>
+                                        <h3>Ayuda</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="cerar sesion">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                        <h3>Cerrar sesión</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="barr barra-inf">
+            <nav id="navegacion-inf">
+                <a class="icon explorar" href=buscador.html>
+                    <i class="fas fa-search">Buscar</i>
+                </a>
+                <a class="icon casa" href=index.html>
+                    <i class="fas fa-home">Inicio</i>
+                </a>
+                <a class="icon perfil" href=usuario.html>
+                    <i class="fas fa-user">Perfil</i>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="cabeza-perfil">
+            <img src="img/usuario.jpg" alt="Foto Usuario">
+            <div class="info-usuario">
+                <h1>JUANA BELLAVISTA</h1>
+                <p>j.bellavista@gmail.com</p>
+                <p>gustos menta granizada, super sambayon, quinotos al whisky</p>
+                <p>descrpcion de la persona</p>
+            </div>
+        </section>
+        <section class="contenedor btn-perfil">
+            <ul class="lista-perfil">
+                <li>
+                    <a class="lista-opciones" href="#">
+                        <i class="icon-ch fas fa-headphones-alt"></i>
+                        <h3>MI AUDIOTECA &nbsp;<i class="fas fa-chevron-down"></i></h3>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Escuchados</a></li>
+                        <li><a href="#">Nuevos agregados</a></li>
+                        <li><a href="#">Por genero</a></li>
+                        <li><a href="#">Todos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="lista-opciones" href="#">
+                        <i class="icon-ch fas fa-star"></i>
+                        <h3>FAVORITOS</h3>
+                    </a>
+                </li>
+                <li>
+                    <a class="lista-opciones" href="#">
+                        <i class="icon-ch fas fa-pray"></i>
+                        <h3>PIDER UN LIBREO</h3>
+                    </a>
+                </li>
+                <li>
+                    <a class="lista-opciones" href="#">
+                        <i class="icon-ch fas fa-envelope"></i>
+                        <h3>MENSAJE</h3>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Los contenidos publicados en estas páginas han sido tomados por alumnos de una materia de la Universidad de Buenos Aires para la realización de un trabajo práctico. Los textos, logotipos, fotografías, tipografías, etc., pueden no ser de su autoría
+            y sólo son utilizados a los fines prácticos del ejercicio.</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Sidebar Accordion JS -->
+    <script src="js/sidebar-accordion.js"></script>
+    <script src="js/dropdown-menu.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>

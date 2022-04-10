@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="css/jquery.gScrollingCarousel.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>UBA, FADU, DGPC - Cátedra Díaz Cortez - Diseño Gráfico y Diseño de Imagen y Sonido - Gisele Ruiz, Daniel Perez - ACUMAR - Bibliotecas Móviles - 2º cuat. 2021</title>
+</head>
+
+<body>
+    <header class="contenedor contenedor-heder">
+        <div class="barra barra-sup">
+            <a href="inicio.html">
+                <img src="img/logo.png" alt="logo auidioteca">
+            </a>
+            <div id="navegacion-sup">
+                <!--Elemento de formulario-->
+                <input type="checkbox" id="btn-menu">
+                <!--Label: sirve para "asociar" elementos por medio del atributo for-->
+                <label for="btn-menu"> 
+                
+                    <div>
+                        <div class="on llamada_campana" onclick="this.className='off';return true;"></div>
+                        <i class="icon i-camp campana fas fa-bell">Notificaciones</i>
+                        <!--<img class="campana" src="campana.svg">-->
+                    </div>
+                </label>
+                <nav class="menu">
+                    <ul>
+                        <li>Se publico tu pedido</li>
+                    </ul>
+                </nav>
+
+                <nav>
+                    <ul>
+                        <li id="menu">
+                            <a class="icon" href="#">
+                                <i class="fas fa-cog">Ajustes</i>
+                            </a>
+                            <ul class="confi">
+                                <li>
+                                    <a href="#" title="mi cuenta">
+                                        <i class="fas fa-user-alt"></i>
+                                        <h3>Mi cuenta</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="configuracion">
+                                        <i class="fas fa-cog"></i>
+                                        <h3>Configuración</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="ayuda">
+                                        <i class="fas fa-map-marker"></i>
+                                        <h3>Ayuda</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="cerar sesion">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                        <h3>Cerrar sesión</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="barr barra-inf">
+            <nav id="navegacion-inf">
+                <a class="icon explorar" href=buscador.html>
+                    <i class="fas fa-search">Buscar</i>
+                </a>
+                <a class="icon casa" href=index.html>
+                    <i class="fas fa-home">Inicio</i>
+                </a>
+                <a class="icon perfil" href=usuario.html>
+                    <i class="fas fa-user">Perfil</i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <section class="favoritos">
+        <div class="catalogo-favoritos">
+            <h2>Mis Favoritos</h2>
+        </div>
+        <article class="btn-favoritos">
+            <a href="#">
+                <img src="img/favs/favoritos-1.jpg" alt="agua y territorio">
+                <div class="info">
+                    <h4>Agua y territorio</h4>
+                    <p>María Di Pace</p>
+                </div>
+            </a>
+        </article>
+        <article class="btn-favoritos">
+            <a href="#">
+                <img src="img/favs/favoritos-2.jpg" alt="otros que se van">
+                <div class="info">
+                    <h4>Otros que se van</h4>
+                    <p>Juan Carlos Chebez</p>
+                </div>
+            </a>
+        </article>
+        <article class="btn-favoritos">
+            <a href="#">
+                <img src="img/favs/favoritos-3.jpg" alt="el danubio">
+                <div class="info">
+                    <h4>El Danubio</h4>
+                    <p>Clauido Magris</p>
+                </div>
+            </a>
+        </article>
+        <article class="btn-favoritos">
+            <a href="#">
+                <img src="img/favs/favoritos-4.jpg" alt="el entenado">
+                <div class="info">
+                    <h4>El Entenado</h4>
+                    <p>Juan José Saer</p>
+                </div>
+            </a>
+        </article>
+        <article class="btn-favoritos">
+            <a href="#">
+                <img src="img/favs/favoritos-5.jpg" alt="aves de la provincia de buenos aires">
+                <div class="info">
+                    <h4>Aves de la Provincia...</h4>
+                    <p>Tito Narosky</p>
+                </div>
+            </a>
+        </article>
+        <article class="btn-favoritos">
+            <a href="#">
+                <img src="img/favs/favoritos-6.jpg" alt="todos los fuegos el fuego">
+                <div class="info">
+                    <h4>Todos los fuegos el...</h4>
+                    <p>Julio Cortázar</p>
+                </div>
+            </a>
+        </article>
+        <article class="btn-favoritos">
+            <a href="#">
+                <img src="img/favs/favoritos-7.jpg" alt="allá lejos y hace tiempo">
+                <div class="info">
+                    <h4>Allá lejos y hace...</h4>
+                    <p>Guillermo Hudson</p>
+                </div>
+            </a>
+        </article>
+        <article class="btn-favoritos">
+            <a href="#">
+                <img src="img/favs/favoritos-8.jpg" alt="sangre salada">
+                <div class="info">
+                    <h4>Sangre Salada</h4>
+                    <p>Sebastián Hacher</p>
+                </div>
+            </a>
+        </article>
+        <article class="btn-favoritos">
+            <a href="#">
+                <img src="img/favs/favoritos-9.jpg" alt="el color del rio">
+                <div class="info">
+                    <h4>El color del río</h4>
+                    <p>Graciela Silvestri</p>
+                </div>
+            </a>
+        </article>
+
+
+
+
+
+    </section>
+    </div>
+    </main>
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/dropdown-menu.js"></script>
+    <script src="js/menu-confi.js"></script>
+    <script src="js/jquery.gScrollingCarousel.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".g-scrolling-carousel .items").gScrollingCarousel();
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>

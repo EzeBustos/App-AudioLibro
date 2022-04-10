@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="js/dropdown-menu.js"></script>
+    <title>UBA, FADU, DGPC - Cátedra Díaz Cortez - Diseño Gráfico y Diseño de Imagen y Sonido - Gisele Ruiz, Daniel Perez - ACUMAR - Bibliotecas Móviles - 2º cuat. 2021</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/user.css">
+
+</head>
+
+<body>
+    <header class="contenedor contenedor-heder">
+        <div class="barra barra-sup">
+            <a href="inicio.html">
+                <img src="img/logo-audiotecas.jpg" alt="logo auidioteca">
+            </a>
+            <nav id="navegacion-sup">
+                <ul>
+                    <li>
+                        <a class="icon" href="#">
+                            <i class="fas fa-bell">Notificaciones</i>
+                        </a>
+                        <ul class="emergente">
+                            <li><a href="#">Se publico tu pedido</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="icon" href="#">
+                            <i class="fas fa-cog">Ajustes</i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="barr barra-inf">
+            <nav id="navegacion-inf">
+                <a class="icon explorar" href=buscador.html>
+                    <i class="fas fa-search">Buscar</i>
+                </a>
+                <a class="icon casa" href=index.html>
+                    <i class="fas fa-home">Inicio</i>
+                </a>
+                <a class="icon perfil user" href=usuario.html>
+                    <i class="fas fa-user">Perfil</i>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="cabeza-perfil">
+            <img src="img/colaborador.jpg" alt="Foto Usuario">
+            <div class="info-usuario">
+                <h1>RUBEN TELEO</h1>
+                <p>r.teleo360@gmail.com</p>
+                <p>gustos menta granizada, super sambayon, quinotos al whisky</p>
+                <p>descrpcion de la persona</p>
+            </div>
+        </section>
+
+
+
+        <div class="accordion">
+
+            <div class="accordion__item contenedor btn-perfil">
+                <div class="accordion__item__header lista-opciones">
+                    <i class="icon-ch fas fa-book"></i>
+                    <h3>BIBILIOTECA &nbsp;<i class="fas fa-chevron-down"></i></h3>
+                    <ul>
+                </div>
+
+                <div class="accordion__item__content lista-opciones">
+                    <ul class="lista-perfil menu">
+                        <li><a href="#">Leidos</a></li>
+                        <li><a href="#">Nuevos agregados</a></li>
+                        <li><a href="#">Por genero</a></li>
+                        <li><a href="#">Todos</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="accordion__item lista-perfil menu">
+                    <div class="accordion__item__header lista-opciones">
+                        <i class="icon-ch fas fa-headphones-alt"></i>
+                        <h3>AUDIOTECA &nbsp;<i class="fas fa-chevron-down"></i></h3>
+                    </div>
+
+                    <div class="accordion__item__content lista-opciones">
+                        <ul class="lista-perfil menu">
+                            <li><a href="#">Leidos</a></li>
+                            <li><a href="#">Nuevos agregados</a></li>
+                            <li><a href="#">Por genero</a></li>
+                            <li><a href="#">Todos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <section class="contenedor btn-perfil">
+                <ul class="lista-perfil menu">
+                    <li>
+                        <a class="lista-opciones" href="#">
+                            <i class="icon-ch fas fa-book"></i>
+                            <h3>BIBILIOTECA &nbsp;<i class="fas fa-chevron-down"></i></h3>
+                            <ul>
+                                <li><a href="#">Leidos</a></li>
+                                <li><a href="#">Nuevos agregados</a></li>
+                                <li><a href="#">Por genero</a></li>
+                                <li><a href="#">Todos</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="lista-opciones" href="#">
+                            <i class="icon-ch fas fa-headphones-alt"></i>
+                            <h3>AUDIOTECA &nbsp;<i class="fas fa-chevron-down"></i></h3>
+                            <ul>
+                                <li><a href="#">Grabados</a></li>
+                                <li><a href="#">Nuevos agregados</a></li>
+                                <li><a href="#">Por genero</a></li>
+                                <li><a href="#">Todos</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="lista-opciones" href="#">
+                            <i class=" icon-ch fas fa-book-reader"></i>
+                            <h3>POR LEER</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="lista-opciones" href="#">
+                            <i class="icon-ch fas fa-pray"></i>
+                            <h3>VER PEDIDOS</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="lista-opciones" href="#">
+                            <i class="icon-ch fas fa-envelope"></i>
+                            <h3>MENSAJE</h3>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <!-- jQuery -->
+
+    <!-- Sidebar Accordion JS -->
+    <script src="js/animacion.js"></script>
+
+    <script>
+        /* cuando todos los elementos del documento hayan sido cargados */
+        $(document).ready(function() {
+
+            /* al cliquear en el icono ... */
+            $("#llamamenu").click(function() {
+
+                /* a la etiqueta que tenga el id "menu"
+                   le agregue la clase "menuvisible" si NO la tiene
+                   y se la quite si la tiene */
+                $("#menu ul").toggleClass("visible");
+
+                /* si el ícono del llamador del menu es la "hamburguesa",
+                   que lo cambie por el ícono de cerrar y viceversa */
+                var icono = $("#llamamenu i").text();
+
+                if (icono == "menu") {
+                    $("#llamamenu i").text("close");
+                } else {
+                    $("#llamamenu i").text("menu");
+                }
+
+            }); /* fin de lo que se hace si se cliquea el icono del menu */
+
+            /*  al cliquear en un vínculo del menu o en main o en footer */
+            $("#menu ul li a, main, footer").click(function() {
+
+                /* le quita la clase "visble" a "#menu" */
+                $("#menu ul").removeClass("visible");
+
+                /* cambia el ícono de "cerrar" por "hamburguesa" */
+                $("#llamamenu i").text("menu");
+
+            }); /* fin de lo que se hace si se cliquea en link del menu */
+        });
+    </script>
+
+    <script src="js/accordion.js"></script>
+
+</body>
+
+</html>

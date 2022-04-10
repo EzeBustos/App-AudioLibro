@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/jquery.gScrollingCarousel.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <style>
+        .g-scrolling-carousel .items {
+            padding: 1em 1em;
+        }
+        
+        .g-scrolling-carousel .items img {
+            display: inline-block;
+            /* notice the comments between inline-block items */
+            margin-right: 10px;
+            width: 110px;
+            height: 110px;
+            line-height: 150px;
+            box-shadow: 0 0 5px #000;
+            text-align: center;
+        }
+        
+        .items img {
+            border-radius: 1em;
+        }
+        
+        .items a {
+            position: relative;
+        }
+        
+        .items a p {
+            position: absolute;
+            color: #000;
+            text-align: center;
+        }
+        
+        .items a p span {
+            font-weight: 500;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            color: #515151;
+        }
+        /*@media only screen and (min-width: 720px) {
+            main {
+                /*background: #f9f9f9;
+                width: 90%;
+                padding: 40px;
+                /*margin-left: auto;
+                margin-right: auto;
+                box-shadow: 2px 1px 6px #777;
+                padding-bottom: 50px;
+            }
+        }*/
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <div class="g-scrolling-carousel">
+            <div class="items">
+                <a href=mujercita.html><img src="img/icono-libro-1.jpg">
+                    <p>Duración <span> 230min</span></p>
+                </a>
+                <a href=mujercita.html></a> <img src="img/icono-libro-2.jpg">
+                <p>Duración <span> 230min</span></p>
+                </a>
+                <a href=mujercita.html></a> <img src="img/icono-libro-3.jpg">
+                <p>Duración <span> 230min</span></p>
+                </a>
+
+                <a href=mujercita.html></a> <img src="img/icono-libro-4.jpg"></a>
+                <a href=mujercita.html><img src="img/icono-libro-1.jpg" alt="Mujercitas"></a>
+                <a href=mujercita.html></a> <img src="https://source.unsplash.com/600x300/?flower"></a>
+                <a href=mujercita.html></a> <img src="https://source.unsplash.com/600x300/?student"></a>
+                <a href=mujercita.html></a> <img src="https://source.unsplash.com/600x300/?way"></a>
+                <a href=mujercita.html></a> <img src="https://source.unsplash.com/600x300/?river"></a>
+                <a href=mujercita.html></a> <img src="https://source.unsplash.com/600x300/?crow"></a>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/jquery.gScrollingCarousel.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".g-scrolling-carousel .items").gScrollingCarousel();
+        });
+    </script>
+</body>
+
+</html>

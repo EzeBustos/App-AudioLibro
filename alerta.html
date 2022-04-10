@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset=UTF-8>
+    <title>DGPC - propiedad css position - responsive </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <style>
+        #btn-menu {
+            display: none;
+        }
+        
+        .menu li {
+            border-right: 1px solid rgb(8, 8, 8);
+        }
+        
+        .menu {
+            position: absolute;
+            background: #b4b4b4;
+            top: 3rem;
+            width: 40%;
+            margin-top: -60%;
+            transition: all .3s;
+            z-index: 999;
+        }
+        /* Uso de virgulilla como un "entonces" seleccionará al elemento .menu por estar precedido del primero y por compartir el padre */
+        
+        #btn-menu:checked~.menu {
+            margin: 0;
+        }
+        /* Estilos que se reemplazarán al hacer clic */
+        
+        .on {
+            background-color: rgba(255, 49, 66, 0.815);
+            border-radius: 100%;
+            width: .5rem;
+            height: .5rem;
+        }
+        
+        .off {
+            background-color: rgba(255, 255, 255, 0);
+        }
+        
+        .llamada_campana {
+            position: absolute;
+            z-index: 9999;
+        }
+        
+        .campana {
+            position: relative;
+            width: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--Elemento de formulario-->
+        <input type="checkbox" id="btn-menu">
+        <!--Label: sirve para "asociar" elementos por medio del atributo for-->
+        <label for="btn-menu"> 
+            
+       <div>
+        <div class="on llamada_campana" onclick="this.className='off';return true;"></div>
+        <i class="fas fa-bell">Notificaciones</i>
+        <!--<img class="campana" src="campana.svg">-->
+       </div>
+        </label>
+        <nav class="menu">
+            <ul>
+                <li>Se publico tu pedido</li>
+            </ul>
+        </nav>
+    </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
